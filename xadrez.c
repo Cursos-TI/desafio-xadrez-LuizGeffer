@@ -4,18 +4,57 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
+
+void torre( int casas) {
+    for(int x=0; x<casas; x++){
+        printf("Direita\n");
+       }
+}
+
+void bispo(int casas) {
+    for (int i = 0; i < casas; i++) {
+        printf("Direita\n");
+        printf("Cima\n");
+    }
+}
+
+void rainha( int casas) {
+    for(int x=0; x<casas; x++){
+        printf("Esquerda\n");
+       }
+}
+
+
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+  
+   torre(5); // Chamando a função torre para movimentar 5 casas a direita
+   printf("\n");//Linha de sepação de peças
+   bispo(5); // Chamando a função bispo para movimentar 5 casas 
+   printf("\n");//Linha de sepação de peças
+   rainha(8); // Chamando a função rainha para movimentar 8 casas a esquerda
+    
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+
+
+  
+   
+
+    printf("\nCavalo\n\n");//Declarando a peça Cavalo
+    for (int y = 0; y < 2; y++) { //Cavalo 2 casas para Baixo
+        printf("Baixo\n");
+
+        for (int x = 0; x<1 && y == 1 ; x++)
+        {
+            printf("Esquerda\n"); //Cavalo 1 casa para Esquerda
+        }
+        
+
+    }
+
+
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
